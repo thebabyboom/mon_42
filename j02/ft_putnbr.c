@@ -27,12 +27,12 @@ void	ft_putnbr(int nb)
 	}
 	temp = nb;
 	while ((temp /= 10) > 0) 	/*on divise le nombre par 10 et on test si il est plus gand que 0*/
-		size *= 10;				/*on multiplie la taille par 10, ceci détermine le nombre de caracatère du nombre size =10000 donc 5caractères*/
-	temp = nb;					/*on remet le nombre dans la variable temp*/
+		size *= 10;		/*on multiplie la taille par 10, ceci détermine le nombre de caracatère du nombre size =10000 donc 5caractères*/
+	temp = nb;			/*on remet le nombre dans la variable temp*/
 	while (size)				
 	{
 		ft_putchar((char)((temp / size)) + 48); /*on divise le nombre par sa taille, dans notre exemple 12447/10000 pour afficher le premier chiffre du nombre */
-		temp %= size; 							/*on remplace le nombre par le reste de la division du nombre par la taille 12447mod10000=2447 */
-		size /= 10;								/*on réduit la taille*/	
+		temp %= size; 				/*on remplace le nombre par le reste de la division du nombre par la taille 12447mod10000=2447 */
+		size /= 10;				/*on réduit la taille*/	
 	}
 }
