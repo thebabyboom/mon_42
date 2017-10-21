@@ -4,7 +4,7 @@
  * @Email:  thebabyboom@gmail.com
  * @Filename: ft_strlen.c
  * @Last modified by:   Babyboom
- * @Last modified time: 21/10/2017  03:19:56
+ * @Last modified time: 21/10/2017  03:22:00
  */
 #include <unistd.h>
 
@@ -50,6 +50,7 @@ int ft_putchar(char c)
  		size /= 10;				/*on réduit la taille*/
  	}
  }
+ 
 int ft_strlen(char *str)
 {
   int i=0;
