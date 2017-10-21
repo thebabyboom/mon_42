@@ -4,7 +4,7 @@
  * @Email:  thebabyboom@gmail.com
  * @Filename: ft_putstr.c
  * @Last modified by:   Babyboom
- * @Last modified time: 21/10/2017  03:05:25
+ * @Last modified time: 21/10/2017  03:07:29
  */
  #include <unistd.h>
 int ft_putchar(char c);
@@ -15,6 +15,8 @@ void main()
     char *str=
     str="chaine";
     ft_putstr(str);
+    ft_putchar('\n');
+    ft_putstr("chainedecaracteres");
 }
 
 int ft_putchar(char c)
