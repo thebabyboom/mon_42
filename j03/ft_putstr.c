@@ -3,10 +3,10 @@
  * @Date:   21/10/2017  02:42:25
  * @Email:  thebabyboom@gmail.com
  * @Filename: ft_putstr.c
- * @Last modified by:   Babyboom
- * @Last modified time: 21/10/2017  03:07:29
+ * @Last modified by:   Coléry David
+ * @Last modified time: 21/10/2017  05:08:12
  */
- #include <unistd.h>
+#include <unistd.h>
 int ft_putchar(char c);
 void ft_putstr(char *str);
 
@@ -33,5 +33,4 @@ void ft_putstr(char *str)
       ft_putchar(str[i]);
       i++;
     }
-
 }
