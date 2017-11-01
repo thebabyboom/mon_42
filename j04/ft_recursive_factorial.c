@@ -4,7 +4,7 @@
  * @Email:  thebabyboom@gmail.com
  * @Filename: ft_recursive_factorial.c
  * @Last modified by:   Coléry David
- * @Last modified time: 01/11/2017  11:29:42
+ * @Last modified time: 01/11/2017  11:31:36
  */
 
 #include <unistd.h>
@@ -15,7 +15,7 @@ int ft_recursive_factorial(int nb);
 void main()
 {
   int res=0;
-  res=ft_recursive_factorial(5);
+  res=ft_recursive_factorial(12);
   printf("%d\n", res);
 }
 

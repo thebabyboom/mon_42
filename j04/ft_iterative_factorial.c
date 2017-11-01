@@ -4,7 +4,7 @@
  * @Email:  thebabyboom@gmail.com
  * @Filename: ft_iterative_factorial.c
  * @Last modified by:   Coléry David
- * @Last modified time: 01/11/2017  11:19:04
+ * @Last modified time: 01/11/2017  11:32:44
  */
 
 #include <unistd.h>
@@ -23,10 +23,19 @@ int ft_iterative_factorial(int nb)
 {
   int i=0;
   int res=0;
-  res=nb;
-  for (i=1;i<nb-1;i++)
+  if(nb>0)
   {
-    res=res*(nb-i);
+    res=nb;
+    for (i=1;i<nb-1;i++)
+    {
+      res=res*(nb-i);
+    }
+    return res;
   }
-  return res;
+  else
+  {
+    res=0;
+    return (res);
+  }
+
 }
